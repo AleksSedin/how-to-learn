@@ -1,0 +1,14 @@
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  /*задаем дочерним элементам границы родительского header*/
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  /*добавлено свойство hidden так как при приближении страницы синий квадрат выходил за пределы header*/
+  overflow: hidden;
+}
