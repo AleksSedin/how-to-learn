@@ -1,3 +1,10 @@
+/*подключаем normalize.css */
+@import url(../vendor/normalize.css);
+
+/*подключаем общие стили*/
+@import url(../blocks/root/root.css);
+@import url(../blocks/page/page.css);
+
 /*подключаем footer*/
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__square-pic/header__square-pic.css);
@@ -74,7 +81,7 @@
 @import url(../blocks/khan/__book-pic/khan__book-pic.css);
 @import url(../blocks/khan/__buy-link/khan__buy-link.css);
 @import url(../blocks/khan/__container/khan__container.css);
-@import url(../blocks/khan/__quota/khan__quota.css);
+@import url(../blocks/khan/__quote/khan__quote.css);
 @import url(../blocks/khan/__quote-author-subline/khan__quote-author-subline.css);
 @import url(../blocks/khan/__quote-author/khan__quote-author.css);
 @import url(../blocks/khan/__title/khan__title.css);
@@ -91,28 +98,12 @@
 /*подключаем footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__author/footer__author.css);
+@import url(../blocks/footer/__column/footer__column.css);
 @import url(../blocks/footer/__column-heading/footer__column-heading.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);
 @import url(../blocks/footer/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
-@import url(../blocks/footer/__columns/_content/footer__column_content_copyright.css);
-@import url(../blocks/footer/__columns/_content/footer__column_content_info.css);
-@import url(../blocks/footer/__columns/_content/footer__column_content_social.css);
+@import url(../blocks/footer/__column/_content/footer__column_content_copyright.css);
+@import url(../blocks/footer/__column/_content/footer__column_content_info.css);
+@import url(../blocks/footer/__column/_content/footer__column_content_social.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
-
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  padding-inline-start: 0;
-}
-
-.body {
-  margin: 0;
-  padding: 0;
-}
